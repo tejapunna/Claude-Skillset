@@ -1,0 +1,20 @@
+{
+  "hostinger-hosting": { "command": "npx", "args": ["--package=hostinger-api-mcp@latest", "hostinger-hosting-mcp"], "env": { "HOSTINGER_API_TOKEN": "${HOSTINGER_API_TOKEN}" } },
+  "hostinger-domains": { "command": "npx", "args": ["--package=hostinger-api-mcp@latest", "hostinger-domains-mcp"], "env": { "HOSTINGER_API_TOKEN": "${HOSTINGER_API_TOKEN}" } },
+  "hostinger-dns": { "command": "npx", "args": ["--package=hostinger-api-mcp@latest", "hostinger-dns-mcp"], "env": { "HOSTINGER_API_TOKEN": "${HOSTINGER_API_TOKEN}" } },
+  "hostinger-billing": { "command": "npx", "args": ["--package=hostinger-api-mcp@latest", "hostinger-billing-mcp"], "env": { "HOSTINGER_API_TOKEN": "${HOSTINGER_API_TOKEN}" } },
+  "hostinger-reach": { "command": "npx", "args": ["--package=hostinger-api-mcp@latest", "hostinger-reach-mcp"], "env": { "HOSTINGER_API_TOKEN": "${HOSTINGER_API_TOKEN}" } },
+  "next-devtools": { "command": "npx", "args": ["-y", "next-devtools-mcp@latest"] },
+  "meta-ads": { "type": "http", "url": "https://mcp.facebook.com/ads" },
+  "filesystem": { "type": "stdio", "command": "npx", "args": ["-y", "@modelcontextprotocol/server-filesystem", "${HOME}"] },
+  "mysql": { "type": "stdio", "command": "npx", "args": ["-y", "@benborla29/mcp-server-mysql"], "env": { "MYSQL_HOST": "${MYSQL_HOST}", "MYSQL_PORT": "${MYSQL_PORT}", "MYSQL_USER": "${MYSQL_USER}", "MYSQL_PASS": "${MYSQL_PASS}" } },
+  "context7": { "command": "npx", "args": ["-y", "@upstash/context7-mcp@latest"], "env": { "CONTEXT7_API_KEY": "${CONTEXT7_API_KEY}" } },
+  "memory": { "command": "npx", "args": ["-y", "@modelcontextprotocol/server-memory"] },
+  "executeautomation-playwright-server": { "command": "npx", "args": ["-y", "@executeautomation/playwright-mcp-server"] },
+  "chrome-devtools": { "command": "npx", "args": ["-y", "chrome-devtools-mcp@latest"] },
+  "playwright-server": { "command": "npx", "args": ["@playwright/mcp@latest"] },
+  "DeepGraph Next.js MCP": { "command": "npx", "args": ["-y", "mcp-code-graph@latest", "vercel/next.js"] },
+  "DeepGraph TypeScript MCP": { "command": "npx", "args": ["-y", "mcp-code-graph@latest", "microsoft/TypeScript"] },
+  "ios-simulator": { "command": "npx", "args": ["-y", "ios-simulator-mcp"] },
+  "apify": { "command": "npx", "args": ["-y", "@apify/actors-mcp-server"], "env": { "APIFY_TOKEN": "${APIFY_TOKEN}" } }
+}
